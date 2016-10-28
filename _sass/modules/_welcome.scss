@@ -127,7 +127,7 @@
   .info {
     position: relative;
     padding: 5em 0 4em 0;
-    @include background("../images/bh-pampulha.jpg", cover, center top);
+    @include background("../images/rj-maracana.jpg", cover, center top);
 
     &:before {
       content: "";
@@ -136,7 +136,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background-color: rgba(213, 236, 70, 0.71);
+      background-color: rgba(49, 132, 222, 0.71);
     }
 
     h1 {
