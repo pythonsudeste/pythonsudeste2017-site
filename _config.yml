@@ -4,8 +4,8 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Conferência Nacional Python organizada pela comunidade da região Sudeste. 2 dias de
   Tutoriais, palestras sobre a linguagem Python.
-baseurl: "/pythonsudeste2017-site/" # the subpath of your site, e.g. /blog/
-url: "http://biancarosa.com.br" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pythonsudeste.com.br" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
