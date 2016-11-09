@@ -1,4 +1,4 @@
-Python Sudeste 2016
+Python Sudeste 2017
 
 
 ### Set up & Install dependencies
