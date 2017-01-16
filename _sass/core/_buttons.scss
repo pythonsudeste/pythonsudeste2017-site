@@ -6,10 +6,10 @@
   white-space: nowrap;
   border-radius: 3px;
   font-family: "Panton Bold";
-  font-size: 3em;
+  font-size: .875em;
   position: relative;
   color: #fff;
-  @include button-states($blue);
+  @include button-states($orange);
   cursor: pointer;
   border: none;
   text-align: center;
