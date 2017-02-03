@@ -158,7 +158,8 @@ a:hover {
     html .welcome .info h1, body .welcome .info h1 {
       font-size: 2em; }
     html .sponsors .sponsors-list .item .imgs img, body .sponsors .sponsors-list .item .imgs img {
-      height: 10em; }
+      height: 4em;
+      max-width: 100%; }
     html .footer img, body .footer img {
       padding-right: 1em; } }
 @media (max-width: 319px) {
@@ -172,16 +173,16 @@ a:hover {
   white-space: nowrap;
   border-radius: 3px;
   font-family: "Panton Bold";
-  font-size: 3em;
+  font-size: 1.875em;
   position: relative;
   color: #fff;
-  background-color: #356F9F;
+  background-color: #F0CB1F;
   cursor: pointer;
   border: none;
   text-align: center;
   padding: 0 1em; }
   .btn_call:hover, .welcome .info .register:hover {
-    background-color: #2f628c;
+    background-color: #e6c00f;
     text-decoration: none; }
   .btn_call:active, .welcome .info .register:active {
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -189,7 +190,7 @@ a:hover {
     -webkit-box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.3); }
   .btn_call:disabled, .welcome .info .register:disabled {
     opacity: .5;
-    background-color: #356F9F; }
+    background-color: #F0CB1F; }
   @media (max-width: 479px) {
     .btn_call, .welcome .info .register {
       min-width: 0;
@@ -365,6 +366,37 @@ a:hover {
     .about .column {
       width: 100%; }
     .about .column:first-child {
+      margin-bottom: 5em; } }
+
+.speakerfight {
+  padding: 4em 0; }
+  .speakerfight:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .speakerfight .column {
+    width: 50%;
+    padding: 0 5%;
+    float: left; }
+  .speakerfight .content {
+    padding: 0 5%;
+    margin-bottom: 40px; }
+  .speakerfight svg {
+    border: solid 1px #cecece;
+    border-radius: 50%;
+    padding: 1em;
+    width: 7em;
+    height: 7em;
+    margin-bottom: 2em; }
+  .speakerfight h1, .speakerfight h2, .speakerfight h3, .speakerfight p {
+    color: #333;
+    margin-bottom: .5em; }
+  .speakerfight a {
+    color: #356F9F; }
+  @media (max-width: 479px) {
+    .speakerfight .column {
+      width: 100%; }
+    .speakerfight .column:first-child {
       margin-bottom: 5em; } }
 
 .speakers {
@@ -598,7 +630,8 @@ a:hover {
       .sponsors .sponsors-list .item .imgs {
         padding-top: 25px; }
         .sponsors .sponsors-list .item .imgs img {
-          height: 12em;
+          height: 4em;
+          max-width: 100%;
           margin-right: 1em;
           display: inline-block; }
       .sponsors .sponsors-list .item .item-link {
