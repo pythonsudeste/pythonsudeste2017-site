@@ -1,6 +1,7 @@
 #sponsorship-link {
     display: block;
     text-align: center;
+    margin-top: 10px;
 }
 
 
@@ -41,6 +42,22 @@
           margin-right: 1em;
           display: inline-block;
         }
+      }
+
+      .imgs.bronze {
+          img {
+             height:4em;
+          }
+      }
+      .imgs.golden {
+          img {
+             height:5em;
+          }
+      }
+      .imgs.diamond {
+          img {
+             height:7em;
+          }
       }
 
       .item-link {
