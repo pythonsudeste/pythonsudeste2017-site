@@ -4,6 +4,10 @@
   @include background("../images/uva-tijuca-campus.jpg");
   position: relative;
 
+  .row {
+      margin-bottom: 3em;
+  }
+
   &:before {
     content: "";
     position: absolute;
