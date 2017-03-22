@@ -368,37 +368,6 @@ a:hover {
     .about .column:first-child {
       margin-bottom: 5em; } }
 
-.speakerfight {
-  padding: 4em 0; }
-  .speakerfight:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .speakerfight .column {
-    width: 50%;
-    padding: 0 5%;
-    float: left; }
-  .speakerfight .content {
-    padding: 0 5%;
-    margin-bottom: 40px; }
-  .speakerfight svg {
-    border: solid 1px #cecece;
-    border-radius: 50%;
-    padding: 1em;
-    width: 7em;
-    height: 7em;
-    margin-bottom: 2em; }
-  .speakerfight h1, .speakerfight h2, .speakerfight h3, .speakerfight p {
-    color: #333;
-    margin-bottom: .5em; }
-  .speakerfight a {
-    color: #356F9F; }
-  @media (max-width: 479px) {
-    .speakerfight .column {
-      width: 100%; }
-    .speakerfight .column:first-child {
-      margin-bottom: 5em; } }
-
 .speakers {
   padding: 3em 0;
   background-color: #f2f2f2; }
@@ -406,44 +375,64 @@ a:hover {
     text-align: center;
     color: #333;
     margin-bottom: 30px; }
-  .speakers .speakers-list {
+  .speakers .keynotes-list, .speakers .speakers-list, .speakers .tutorials-list {
     list-style: none;
     font-size: 0;
     margin: 0 -15px; }
-    .speakers .speakers-list:after {
+    .speakers .keynotes-list:after, .speakers .speakers-list:after, .speakers .tutorials-list:after {
       content: "";
       display: table;
       clear: both; }
-    .speakers .speakers-list .speaker {
-      font-size: 1rem;
-      vertical-align: top;
+  .speakers .keynote, .speakers .speaker, .speakers .tutorial {
+    font-size: 1rem;
+    vertical-align: top;
+    display: inline-block;
+    margin: 15px;
+    width: calc(33% - 30px); }
+  .speakers .speaker, .speakers .tutorial {
+    text-align: center; }
+  .speakers .speaker {
+    font-size: 0.7rem; }
+  .speakers .tutorial {
+    font-size: 0.8rem; }
+    .speakers .tutorial:last-child {
+      display: block;
+      margin: 15px auto; }
+  .speakers .photo {
+    width: 375px;
+    height: 375px;
+    overflow: hidden;
+    background-color: #eaeaea;
+    background-image: url("../images/speaker.svg");
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .speakers .photo img {
+      width: 100%;
       display: inline-block;
-      margin: 15px;
-      width: calc(33% - 30px); }
-      .speakers .speakers-list .speaker .photo {
-        width: 100%;
-        background-color: #eaeaea;
-        background-image: url("../images/speaker.svg");
-        background-size: 50% 50%;
-        background-position: center;
-        background-repeat: no-repeat; }
-        .speakers .speakers-list .speaker .photo img {
-          width: 100%; }
-      .speakers .speakers-list .speaker .speaker-link {
-        text-decoration: none; }
-      .speakers .speakers-list .speaker .speaker-name {
-        color: #333;
-        font-family: "Panton Light Italic";
-        margin: 30px 0 15px 0; }
-      .speakers .speakers-list .speaker .speaker-description {
-        color: #333; }
-      .speakers .speakers-list .speaker .link {
-        font-style: italic; }
+      vertical-align: middle; }
+  .speakers .speaker-link {
+    text-decoration: none; }
+  .speakers .speaker-name {
+    color: #333;
+    font-family: "Panton Light Italic";
+    margin: 30px 0 15px 0; }
+  .speakers .speaker-description {
+    color: #333; }
+  .speakers .link {
+    font-style: italic; }
   @media (max-width: 767px) {
-    .speakers .speakers-list .speaker {
-      width: calc(50% - 30px); } }
+    .speakers .keynote, .speakers .speaker, .speakers .tutorial {
+      width: calc(100% - 30px); }
+      .speakers .keynote .photo, .speakers .speaker .photo, .speakers .tutorial .photo {
+        width: 100%;
+        height: 320px; }
+        .speakers .keynote .photo img, .speakers .speaker .photo img, .speakers .tutorial .photo img {
+          width: 320px;
+          display: block;
+          margin: 0 auto; } }
   @media (max-width: 319px) {
-    .speakers .speakers-list .speaker {
+    .speakers .keynote, .speakers .speaker, .speakers .tutorial {
       width: 100%; } }
 
 .location {
