@@ -638,10 +638,12 @@ a:hover {
           margin-right: 1em;
           display: inline-block; }
       .sponsors .sponsors-list .item .imgs.bronze img {
-        height: 4em; }
-      .sponsors .sponsors-list .item .imgs.golden img {
         height: 5em; }
+      .sponsors .sponsors-list .item .imgs.golden img {
+        height: 6em; }
       .sponsors .sponsors-list .item .imgs.diamond img {
+        height: 8em; }
+      .sponsors .sponsors-list .item .imgs.platina img {
         height: 7em; }
       .sponsors .sponsors-list .item .item-link {
         text-decoration: none; }
