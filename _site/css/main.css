@@ -597,8 +597,10 @@ a:hover {
 
 .sponsors {
   background-color: #f2f2f2;
-  padding: 4em 0; }
-  .sponsors h1 {
+  padding: 2em 0; }
+  .sponsors .row {
+    margin-top: 3.750em; }
+  .sponsors h1, .sponsors h2 {
     font-family: "Panton Light";
     text-align: center;
     color: #333; }
@@ -627,13 +629,13 @@ a:hover {
           margin-right: 1em;
           display: inline-block; }
       .sponsors .sponsors-list .item .imgs.bronze img {
-        height: 5em; }
+        height: 4em; }
       .sponsors .sponsors-list .item .imgs.golden img {
-        height: 6em; }
+        height: 5em; }
       .sponsors .sponsors-list .item .imgs.diamond img {
-        height: 8em; }
-      .sponsors .sponsors-list .item .imgs.platina img {
         height: 7em; }
+      .sponsors .sponsors-list .item .imgs.platina img {
+        height: 6em; }
       .sponsors .sponsors-list .item .item-link {
         text-decoration: none; }
       .sponsors .sponsors-list .item .link {
@@ -653,9 +655,21 @@ a:hover {
         width: 3em; }
       .sponsors .sponsors-list .no-sponsor p {
         color: #333; }
+    .sponsors .sponsors-list__diamond .item {
+      width: calc(30% - 30px); }
+    .sponsors .sponsors-list__platina .item {
+      width: calc(23% - 30px); }
+    .sponsors .sponsors-list__ouro .item {
+      width: calc(20% - 30px); }
+    .sponsors .sponsors-list__prata .item {
+      width: calc(20% - 30px); }
+    .sponsors .sponsors-list__bronze .item {
+      width: calc(17% - 30px); }
   @media (max-width: 767px) {
     .sponsors .sponsors-list .item {
-      width: calc(50% - 30px); } }
+      width: calc(50% - 30px); }
+    .sponsors .sponsors-list.sponsors-list__diamond .item {
+      width: 100%; } }
 
 .volunteers {
   padding: 4em 0; }

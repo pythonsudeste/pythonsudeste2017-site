@@ -7,9 +7,13 @@
 
 .sponsors {
   background-color: #f2f2f2;
-  padding: 4em 0;
+  padding: 2em 0;
 
-  h1 {
+  .row{
+      margin-top: 3.750em;
+  }
+
+  h1, h2 {
     font-family: "Panton Light";
     text-align: center;
     color: #333;
@@ -24,6 +28,7 @@
     .item {
       font-size: 1rem;
       vertical-align: top;
+    //   text-align: center;
       display: inline-block;
       margin: 15px;
       width: calc(25% - 30px);
@@ -46,22 +51,22 @@
 
       .imgs.bronze {
           img {
-             height:5em;
+             height:4em;
           }
       }
       .imgs.golden {
           img {
-             height:6em;
+             height:5em;
           }
       }
       .imgs.diamond {
           img {
-             height:8em;
+             height:7em;
           }
       }
       .imgs.platina {
           img {
-             height:7em;
+             height:6em;
           }
       }
 
@@ -100,11 +105,40 @@
         color: #333;
       }
     }
+
+    &__diamond{
+        .item {
+          width: calc(30% - 30px);
+      }
+    }
+    &__platina{
+        .item {
+          width: calc(23% - 30px);
+      }
+    }
+    &__ouro{
+        .item {
+          width: calc(20% - 30px);
+      }
+    }
+    &__prata{
+        .item {
+          width: calc(20% - 30px);
+      }
+    }
+    &__bronze{
+        .item {
+          width: calc(17% - 30px);
+      }
+    }
   }
 
   @media(max-width: 767px) {
     .sponsors-list .item {
       width: calc(50% - 30px);
+    }
+    .sponsors-list.sponsors-list__diamond .item {
+      width: 100%;
     }
   }
 }
