@@ -28,7 +28,7 @@
     .item {
       font-size: 1rem;
       vertical-align: top;
-    //   text-align: center;
+      text-align: center;
       display: inline-block;
       margin: 15px;
       width: calc(25% - 30px);
@@ -44,7 +44,6 @@
         img {
           height: 4em;
           max-width: 100%;
-          margin-right: 1em;
           display: inline-block;
         }
       }
@@ -108,7 +107,7 @@
 
     &__diamond{
         .item {
-          width: calc(30% - 30px);
+          width: calc(33.33% - 30px);
       }
     }
     &__platina{

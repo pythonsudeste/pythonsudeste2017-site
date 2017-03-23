@@ -615,6 +615,7 @@ a:hover {
     .sponsors .sponsors-list .item {
       font-size: 1rem;
       vertical-align: top;
+      text-align: center;
       display: inline-block;
       margin: 15px;
       width: calc(25% - 30px); }
@@ -626,7 +627,6 @@ a:hover {
         .sponsors .sponsors-list .item .imgs img {
           height: 4em;
           max-width: 100%;
-          margin-right: 1em;
           display: inline-block; }
       .sponsors .sponsors-list .item .imgs.bronze img {
         height: 4em; }
@@ -656,7 +656,7 @@ a:hover {
       .sponsors .sponsors-list .no-sponsor p {
         color: #333; }
     .sponsors .sponsors-list__diamond .item {
-      width: calc(30% - 30px); }
+      width: calc(33.33% - 30px); }
     .sponsors .sponsors-list__platina .item {
       width: calc(23% - 30px); }
     .sponsors .sponsors-list__ouro .item {
