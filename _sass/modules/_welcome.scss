@@ -18,7 +18,7 @@
       }
 
       img {
-        width: 9.5em;
+        width: 3.5em;
         margin-right: .5em;
       }
 
@@ -127,7 +127,7 @@
   .info {
     position: relative;
     padding: 5em 0 4em 0;
-    @include background("../images/rj-maracana.jpg", cover, center top);
+    @include background("../images/caxias-do-sul.jpg", cover, center top);
 
     &:before {
       content: "";
@@ -168,6 +168,7 @@
 
     .register {
       @extend .btn_call;
+      pointer-events: none;
     }
   }
 }
