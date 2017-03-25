@@ -1,5 +1,5 @@
 {
-  "name": "pythonsudeste2016-site-site",
+  "name": "pythonsul-site",
   "version": "1.0.0",
   "description": "Conferência da região sudeste da Comunidade Python",
   "main": "index.js",
@@ -8,20 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pythonsudeste/pythonsudeste2016-site.git"
+    "url": "https://github.com/pythonsul/pythonsul-site.git"
   },
   "keywords": [
     "python",
     "conference",
     "brasil",
-    "sudeste"
+    "sul"
   ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pythonsudeste/pythonsudeste2016-site/issues"
+    "url": "https://github.com/pythonsul/pythonsul-site/issues"
   },
-  "homepage": "https://github.com/pythonsudeste/pythonsudeste2016-site",
+  "homepage": "https://github.com/pythonsul/pythonsul-site",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
