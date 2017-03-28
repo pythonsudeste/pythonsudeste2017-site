@@ -600,6 +600,10 @@ a:hover {
   padding: 2em 0; }
   .sponsors .row {
     margin-top: 3.750em; }
+  .sponsors .text-center {
+    text-align: center; }
+    .sponsors .text-center h2 {
+      margin-bottom: 40px; }
   .sponsors h1, .sponsors h2 {
     font-family: "Panton Light";
     text-align: center;
@@ -665,6 +669,17 @@ a:hover {
       width: calc(20% - 30px); }
     .sponsors .sponsors-list__bronze .item {
       width: calc(17% - 30px); }
+    .sponsors .sponsors-list__one .item {
+      width: calc(100% - 30px); }
+      .sponsors .sponsors-list__one .item .imgs.platina img {
+        height: auto;
+        max-width: 150px; }
+      .sponsors .sponsors-list__one .item .imgs.gold img {
+        height: auto;
+        max-width: calc(20% - 30px); }
+      .sponsors .sponsors-list__one .item .imgs.bronze img {
+        height: auto;
+        max-width: calc(17% - 30px); }
   @media (max-width: 767px) {
     .sponsors .sponsors-list .item {
       width: calc(50% - 30px); }

@@ -13,6 +13,13 @@
       margin-top: 3.750em;
   }
 
+  .text-center{
+   text-align: center;
+   h2{
+       margin-bottom: 40px;
+   }
+  }
+
   h1, h2 {
     font-family: "Panton Light";
     text-align: center;
@@ -129,6 +136,30 @@
         .item {
           width: calc(17% - 30px);
       }
+    }
+
+    &__one{
+        .item {
+          width: calc(100% - 30px);
+          .imgs.platina{
+              img{
+                height: auto;
+                max-width: 150px;
+              }
+          }
+          .imgs.gold{
+              img{
+                height: auto;
+                max-width: calc(20% - 30px);
+              }
+          }
+          .imgs.bronze{
+              img{
+                height: auto;
+                max-width: calc(17% - 30px);
+              }
+          }
+        }
     }
   }
 
