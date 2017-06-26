@@ -8,57 +8,80 @@
     margin-bottom: 30px;
   }
 
-  .speakers-list {
+  .keynotes-list, .speakers-list, .tutorials-list {
     list-style: none;
     @include clearfix;
     font-size: 0;
     margin: 0 -15px;
 
-    .speaker {
-      font-size: 1rem;
-      vertical-align: top;
+  }
+
+  .keynote, .speaker, .tutorial {
+    font-size: 1rem;
+    vertical-align: top;
+    display: inline-block;
+    margin: 15px;
+    width: calc(33% - 30px);
+  }
+
+  .speaker, .tutorial { text-align: center; }
+
+  .speaker { font-size: 0.7rem; }
+
+  .tutorial {
+    font-size: 0.8rem;
+    &:last-child { display: block;  margin: 15px auto; }
+  }
+
+  .photo {
+    width: 375px;
+    height: 375px;
+    overflow: hidden;
+    background-color: transparent;
+    @include icon("../images/speaker.svg", 50% 50%);
+
+    img {
+      width: 100%;
       display: inline-block;
-      margin: 15px;
-      width: calc(25% - 30px);
-
-      .photo {
-        width: 100%;
-        background-color: #eaeaea;
-        @include icon("../images/speaker.svg", 50% 50%);
-
-        img {
-          width: 100%;
-        }
-      }
-
-      .speaker-link {
-        text-decoration: none;
-      }
-
-      .speaker-name {
-        color: #333;
-        font-family: "Panton Light Italic";
-        margin: 30px 0 15px 0;
-      }
-
-      .speaker-description {
-        color: #333;
-      }
-
-      .link {
-        font-style: italic;
-      }
+      vertical-align: middle;
     }
   }
 
+  .speaker-link {
+    text-decoration: none;
+  }
+
+  .speaker-name {
+    color: #333;
+    font-family: "Panton Light Italic";
+    margin: 30px 0 15px 0;
+  }
+
+  .speaker-description {
+    color: #333;
+  }
+
+  .link {
+    font-style: italic;
+  }
+
   @media(max-width: 767px) {
-    .speakers-list .speaker {
-      width: calc(50% - 30px);
+    .keynote, .speaker, .tutorial {
+      width: calc(100% - 30px);
+      .photo {
+        width: 100%;
+        height: 320px;
+        img {
+          width: 320px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
     }
   }
 
   @media(max-width: 319px) {
-    .speakers-list .speaker {
+    .keynote, .speaker, .tutorial {
       width: 100%;
     }
   }
